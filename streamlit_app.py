@@ -52,6 +52,8 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
 
+import snowflake.connector
+
 
 def get_fruityvice_data(this_fruit_choice):
 
@@ -138,6 +140,5 @@ if streamlit.button('Add a Fruit to the List'):
    back_from_function = insert_row_snowflake(add_my_fruit)
 
    streamlit.text(back_from_function)
-
 
 
