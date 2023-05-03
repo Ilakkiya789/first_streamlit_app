@@ -52,7 +52,7 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
 
-import snowflake.connector
+
 
 
 def get_fruityvice_data(this_fruit_choice):
